@@ -33,3 +33,16 @@ maxvalue 9999
 minvalue 1
 cycle;
 ```
+
+##### Primero Iniciamos la Secuencia
+```sql
+select secuencialibros.nextval from dual;
+```
+
+##### procedemos a incertar valores utilizando la secuencia
+```sql
+insert into libros values (secuencialibros.currval, ' El quijote' , 'Miguel de Cervantes' , 500.00 ) ;
+```
+|IDLIBRO |  TITULO |  AUTOR | PRECIO |
+|:------ | -------- : |-------:| -------:|
+| 1 | El quijote | Miguel de cervantes | 500 |
