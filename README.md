@@ -44,5 +44,5 @@ select secuencialibros.nextval from dual;
 insert into libros values (secuencialibros.currval, ' El quijote' , 'Miguel de Cervantes' , 500.00 ) ;
 ```
 |IDLIBRO |  TITULO |  AUTOR | PRECIO |
-|:------ | -------- : |-------:| -------:|
+|:------ | :-------- : |:-------:| -------:|
 | 1 | El quijote | Miguel de cervantes | 500 |
